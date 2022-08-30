@@ -1,0 +1,14 @@
+<!ELEMENT Oglasi (Oglas+)>
+<!ELEMENT Oglas(id,KategorijaOglasa,DatumIsteka,TekstOglasa,Cena,Oznaka,Email)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT KategorijaOglasa (#PCDATA)>
+<!ELEMENT DatumIsteka (#PCDATA)>
+<!ELEMENT TekstOglasa (#PCDATA)>
+<!ELEMENT Cena (#PCDATA)>
+<!ELEMENT Oznaka (Tag+)>
+<!ELEMENT Tag (#PCDATA)>
+<!ELEMENT Email (mail+)>
+<!ELEMENT mail (#PCDATA)>
+
+<!ATTLIST Cena valuta (rsd|eur|rub) #REQUIRED>
+<!ATTLIST mail tip (privatni|poslovni) "privatni">
