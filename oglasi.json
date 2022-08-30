@@ -1,0 +1,125 @@
+[
+  {
+    "id": 2,
+    "kategorija": "muzicki instrument",
+    "cena": {
+      "valuta": "dinar",
+      "vrednost": "11"
+    },
+    "opis": "Torba za gitaru",
+    "datum": "12-03-2022",
+    "email": {
+      "mail": [
+        {
+          "tip": "privatni",
+          "mail": "milos@gmail.com\nmilos@gmail.com\nmilos@gmail.com\n\n\n"
+        },
+        {
+          "tip": "poslovni",
+          "mail": "milos00@gmail.com"
+        },
+        {
+          "tip": "poslovni",
+          "mail": ""
+        },
+        {
+          "tip": "poslovni",
+          "mail": ""
+        },
+        {
+          "tip": "poslovni",
+          "mail": ""
+        },
+        {
+          "tip": "poslovni",
+          "mail": ""
+        },
+        {
+          "tip": "poslovni",
+          "mail": ""
+        }
+      ]
+    },
+    "tagovi": [
+      "torba",
+      "gitara",
+      "povoljno-srbija",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 3,
+    "kategorija": "muzicki instrument",
+    "cena": {
+      "valuta": "dinar",
+      "vrednost": "30"
+    },
+    "opis": "Duks umbro.",
+    "datum": "10-08-2022",
+    "email": {
+      "mail": [
+        {
+          "tip": "privatni",
+          "mail": "ivan@gmail.com\n\n\n\n\n\n\n\n"
+        },
+        {
+          "tip": "poslovni",
+          "mail": "ivan00@gmail.com"
+        },
+        {
+          "tip": "poslovni",
+          "mail": ""
+        },
+        {
+          "tip": "poslovni",
+          "mail": ""
+        },
+        {
+          "tip": "poslovni",
+          "mail": ""
+        },
+        {
+          "tip": "poslovni",
+          "mail": ""
+        },
+        {
+          "tip": "poslovni",
+          "mail": ""
+        },
+        {
+          "tip": "poslovni",
+          "mail": ""
+        },
+        {
+          "tip": "poslovni",
+          "mail": ""
+        },
+        {
+          "tip": "poslovni",
+          "mail": ""
+        },
+        {
+          "tip": "poslovni",
+          "mail": ""
+        },
+        {
+          "tip": "poslovni",
+          "mail": ""
+        },
+        {
+          "tip": "poslovni",
+          "mail": ""
+        }
+      ]
+    },
+    "tagovi": [
+      "duks",
+      "umbro",
+      "",
+      "",
+      "",
+      ""
+    ]
+  }
+]
