@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Oglasi SYSTEM "oglasi.dtd">
+<Oglasi>
+    <Oglas>
+        <id>1<id>
+        <KategorijaOglasa>muzicki instrument</KategorijaOglasa>
+        <DatumIsteka>2022-01-12</DatumIsteka>
+        <TekstOglasa>Prodajem gitaru ...</TekstOglasa>
+        <Cena valuta="rsd">15000</Cena>
+    </Oglas>
+    <Oznaka>
+        <Tag>gitara</Tag>
+        <Tag>fender</Tag>
+    </Oznaka>
+    <Email>
+            <mail tip="privatni">analo12223@gmail.com<mail/>
+            <mail tip="poslovni">aleksandar00@gmail.com<mail/>
+        </Email>
+    <Oglas>
+        <id>2</id>
+        <KategorijaOglasa>Odeca</KategorijaOglasa>
+        <DatumIsteka>2022-05-10</DatumIsteka>
+        <TekstOglasa>Prodajem majicu ...</TekstOglasa>
+        <Cena valuta="eur">20</Cena>
+    </Oglas>
+    <Oznaka>
+        <Tag>majica</Tag>
+        <Tag>umbro</Tag>
+    </Oznaka>
+    <Email>
+            <mail tip="privatni">analo12223@gmail.com<mail/>
+            <mail tip="poslovni">aleksandar00@gmail.com<mail/>
+        </Email>
+</Oglasi>
