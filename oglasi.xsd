@@ -1,0 +1,106 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="oglasi">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Oglas" maxOccurs="unbounded" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:decimal" name="id"></xs:element>    
+
+                            <xs:element name="KategorijaOglasa">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="automobili"/>
+                                        <xs:enumeration value="stanovi"/>
+                                        <xs:enumeration value="alati"/>
+                                        <xs:enumeration value="poducavanje"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                            <xs:element name="DatumIsteka">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:date">
+                                        <xs:pattern value="\d\d\d\d-\d\d-\d\d"></xs:pattern>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                            <xs:element name="TekstOglasa">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="10"/>
+                                        <xs:maxLength value="180"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+
+                            <xs:element name="Cena">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="valuta">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="rsd"/>
+                                                    <xs:enumeration value="eur"/>
+                                                    <xs:enumeration value="rub"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="cena">
+                                          <xs:simpleType>
+                                            <xs:restriction base="xs:decimal">
+                                              <xs:minInclusive value="0"/>
+                                            </xs:restriction>
+                                          </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+
+                            <xs:element name="Oznaka">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:string" name="Tag" maxOccurs="unbounded" minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+
+                            <xs:element name="Email">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="mail" maxOccurs="unbounded" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="tip">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="privatni"/>
+                                                                <xs:enumeration value="sluzbeni"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="email">
+                                                    <xs:simpleType>
+                                                        <xs:restriction base="xs:string">
+                                                            <xs:maxLength value="100"/>
+                                                            <xs:pattern value="[^@]+@[^.]+..+|"/>
+                                                        </xs:restriction>
+                                                    </xs:simpleType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
